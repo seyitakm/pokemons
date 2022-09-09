@@ -25,9 +25,16 @@ async function cardFunction() {
                 .then((res) => res.json())
                 .then((data) => {
                   let modal = document.createElement("div");
+                  let overlay = document.createElement("div");
+                  overlay.classList.add("overlay-modal");
                   modal.classList.add("modal");
                   modal.innerHTML = modalWindow(data);
                   document.body.append(modal);
+                  document.body.append(overlay);
+                  overlay.addEventListener("click", () => {
+                    modal.remove();
+                    overlay.remove();
+                  });
                 });
             });
           });

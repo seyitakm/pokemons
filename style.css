@@ -111,6 +111,27 @@
   }
 }
 .modal {
-  width: 100%;
-  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms ease-in;
+  position: fixed;
+  background-color: rgb(179, 161, 212);
+  color: white;
+  border: 2px solid silver;
+  border-radius: 5vw;
+  width: 50vw;
+  height: 30vh;
+  top: 25vh;
+  left: 25vw;
+  z-index: 100;
+}
+.overlay-modal {
+  position: fixed;
+  background-color: rgba(169, 137, 94, 0.6);
+  width: 100vw;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 50;
 }
