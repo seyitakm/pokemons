@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: black;
+}
 .text {
   display: flex;
   justify-content: center;
@@ -114,7 +117,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 500ms ease-in;
+  transition: 1000ms ease-in;
   position: fixed;
   background-color: rgb(179, 161, 212);
   color: white;
